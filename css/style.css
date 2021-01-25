@@ -64,14 +64,14 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
-.banner {
+.message {
   background-size: cover;
   background-position: top;
   position: relative; }
-  .banner__image {
+  .message__image {
     height: 20vh;
     width: 100vw; }
-  .banner__title {
+  .message__title {
     position: absolute;
     top: 25%;
     left: 10%;
@@ -132,7 +132,7 @@ body {
 .container .banner {
   position: relative; }
   .container .banner__image {
-    height: 89vh;
+    height: 90vh;
     width: 99.1vw;
     background-size: cover;
     background-position: top; }
@@ -302,15 +302,135 @@ body {
     .register__right-title {
       text-align: center;
       color: #0f1225;
-      font-size: 5rem; }
+      font-size: 5rem;
+      margin-top: 6vh;
+      margin-bottom: 2rem; }
     .register__right-form {
       display: flex;
-      flex-direction: column; }
-      .register__right-form input {
-        margin-bottom: 2rem;
-        padding: 2rem 0;
-        color: #707070;
-        border: none;
-        border-radius: 10px;
-        background-color: #f1f1f1;
-        padding-left: 2rem; }
+      flex-direction: column;
+      align-items: stretch; }
+      .register__right-form label {
+        position: relative; }
+        .register__right-form label input {
+          width: 100%;
+          margin-bottom: 2rem;
+          padding: 2rem 0;
+          color: #707070;
+          border: none;
+          border-radius: 10px;
+          background-color: #f1f1f1;
+          padding-left: 2rem; }
+          .register__right-form label input:focus {
+            outline: none; }
+      .register__right-form-icon {
+        position: absolute;
+        top: 1.3rem;
+        right: 5%;
+        fill: #2fe4b3;
+        height: 3rem;
+        width: 3rem; }
+      .register__right-form .lock {
+        position: absolute;
+        right: 4%; }
+    .register__right-button, .register__right-button:link, .register__right-button:visited {
+      color: #fff8fb;
+      text-transform: uppercase;
+      background-color: #2fe4b3;
+      text-decoration: none;
+      padding: 1rem 0;
+      border-radius: 10px;
+      transition: all 0.2s;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 4rem;
+      border: none;
+      cursor: pointer; }
+    .register__right-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+      .register__right-button:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0; }
+    .register__right-button:active, .register__right-button:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+    .register__right-already {
+      font-size: 2rem;
+      margin-top: 1.5rem; }
+
+.login {
+  display: flex;
+  align-items: center; }
+  .login__image {
+    height: 89.95vh;
+    width: 50vw; }
+  .login__right {
+    margin: auto;
+    height: 80vh;
+    width: 30%;
+    padding-top: 10rem; }
+    .login__right-title {
+      text-align: center;
+      color: #0f1225;
+      font-size: 5rem;
+      margin-top: 6vh;
+      margin-bottom: 2rem; }
+    .login__right-form {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch; }
+      .login__right-form label {
+        position: relative; }
+        .login__right-form label input {
+          width: 100%;
+          margin-bottom: 2rem;
+          padding: 2rem 0;
+          color: #707070;
+          border: none;
+          border-radius: 10px;
+          background-color: #f1f1f1;
+          padding-left: 2rem; }
+          .login__right-form label input:focus {
+            outline: none; }
+      .login__right-form-icon {
+        position: absolute;
+        top: 1.3rem;
+        right: 5%;
+        fill: #db1673;
+        height: 3rem;
+        width: 3rem; }
+      .login__right-form .lock {
+        position: absolute;
+        right: 4%; }
+    .login__right-button, .login__right-button:link, .login__right-button:visited {
+      color: #fff8fb;
+      text-transform: uppercase;
+      background-color: #db1673;
+      text-decoration: none;
+      padding: 1rem 0;
+      border-radius: 10px;
+      transition: all 0.2s;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 4rem;
+      border: none;
+      cursor: pointer; }
+    .login__right-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+      .login__right-button:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0; }
+    .login__right-button:active, .login__right-button:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+    .login__right-already {
+      font-size: 2rem;
+      margin-top: 1.5rem; }
+
+.player {
+  background-image: linear-gradient(to bottom, #0f1225, #101728, #184f4e, #2fe4b3);
+  border: 3px solid red;
+  color: #ffffff; }
