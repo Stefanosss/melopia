@@ -1,3 +1,112 @@
-p {
-  font-size: 5rem;
+// .carouselSlider {
+//   background-size: cover;
+//   background-position: top;
+//   position: relative;
+// }
+
+// .carouselImage {
+//   height: 20vh;
+// }
+
+// .carouselBanner {
+//   position: absolute;
+//   top: 25%;
+//   left: 10%;
+//   padding: 2rem;
+
+//   background-color: rgba($color: #fff, $alpha: 0.77);
+//   &__title {
+//     color: #0f1225;
+//     text-transform: uppercase;
+//     font-size: 3rem;
+//     font-weight: 600;
+//   }
+// }
+
+.banner {
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  &__image {
+    height: 20vh;
+    width: 100vw;
+  }
+
+  &__title {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    padding: 2rem;
+    background-color: rgba($color: #fff, $alpha: 0.77);
+    color: #0f1225;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}
+
+.homecontainer {
+  height: 70vh;
+  -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  background-color: #0f1225;
+  position: relative;
+
+  .search {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__input {
+      margin-top: 2rem;
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+      border: none;
+      padding: 0.7rem 2rem;
+      border-radius: 100px;
+      width: 30%;
+      transition: all 0.2s;
+      margin-right: -3.25rem;
+      font-size: 2rem;
+
+      &:focus {
+        outline: none;
+        width: 40%;
+      }
+    }
+
+    &__button {
+      border: none;
+      margin-top: 2rem;
+      &:focus {
+        outline: none;
+      }
+
+      &:active {
+        transform: translateY(2px);
+      }
+    }
+
+    &__icon {
+      height: 2rem;
+      width: 2rem;
+      outline: none;
+    }
+  }
+
+  .trending {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+      color: #db1673;
+    }
+  }
 }
