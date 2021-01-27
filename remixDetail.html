@@ -35,7 +35,7 @@
         
     </div>
 
-    <div class="containerplay">
+    <div class="containerplay" id="containerplay">
         <div class="player">
         <div class="player__commands" >
             <svg class="player__commands-icon">
@@ -63,7 +63,7 @@
                     </svg>
                     <p class="player__play-stats-comments-number">564</p>
                 </div>
-                <button class="player__play-stats-upload">Upload now</button>
+                <a href="#popup" class="player__play-stats-upload">Upload now</a>
             </div>
         </div>
 
@@ -216,6 +216,31 @@
 
 
 
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup__area">
+            <div class="popup__header">
+                <a href="#containerplay" class="popup__header-close">&times;</a>
+                <h1 class="popup__header-title">Upload your beat</h1>
+            </div>
+
+            <div class="popup__content">
+                <h3 class="popup__remixtitle">Title of your remix</h3>
+                <input type="text" placeholder="Remix title..." class="popup__input">
+                
+                <div class="popup__uploadzone">
+                    <h3 class="popup__instruction">Drop your remix here</h3>
+                    <svg class="popup__icon">
+                        <use xlink:href="img/sprite.svg#icon-upload"></use>
+                    </svg>
+                    <button class="popup__uploadbutton">Select a remix</button>
+                </div>
+
+                <button class="popup__post">Post your remix</button>
+            </div>
+
+        </div>
     </div>
     
 </body>
